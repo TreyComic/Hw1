@@ -134,9 +134,14 @@ public class Main {
 
 
     // Question 10
-    //public static boolean contains(String[] names, String element) {
-        //return " ";
-    //}
+    public static boolean contains(String[] names, String element) {
+        for(String name : names) { //new array with values
+            if(name.equals(element)){ //check if any = element
+                return true;
+            }
+        }
+        return false;
+    }
 
     // Question 11
     public static int getIndexByElement(String[] names, String element) {
@@ -170,7 +175,7 @@ public class Main {
 
     //Question 14
     public static int wordsInAStringCounter(String str) {
-        return o;
+        return 0;
     }
 
     //Question 15 - A, E, I, O, U
