@@ -1,7 +1,7 @@
 public class Main {
     //Question 1
     public static int getLastIndex(String[] names) {
-        for (int counter = names.length -2; counter >= 0; counter--) {
+        for (int counter = names.length - 1; counter >= 0; counter--) {
             if (names[counter] != null) { //check if its empty
                 return counter;
             }
@@ -11,7 +11,7 @@ public class Main {
 
     //Question 2
     public static int getSecondToLastIndex(String[] names) {
-        for (int counter = names.length -1; counter >= 0; counter--) {
+        for (int counter = names.length - 2; counter >= 0; counter--) {
             if (names[counter] != null) {
                 return counter;
             }
@@ -42,7 +42,7 @@ public class Main {
 
     //Question 5
     public static String getSecondToLastElement(String[] names) {
-        for (int counter = names.length - 1; counter >= 0; counter--) {
+        for (int counter = names.length - 2; counter >= 0; counter--) {
             if (names[counter] != null) {
                 return names[counter];
             }
@@ -160,6 +160,7 @@ public class Main {
 
     //Question 13
     public static String printGivenStringTimesNumberGiven(String str, int n) {
+        StringBuilder resultout = new StringBuilder();
         return null;
     }
 
