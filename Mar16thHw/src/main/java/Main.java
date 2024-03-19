@@ -78,7 +78,7 @@ public class Main {
         int i = 0;
         for (int count : numbers){
             if (x % 2 != 0) {
-               convert[i] = x;
+               convert[i++] = x;
             }
         }
         return convert;
@@ -161,7 +161,10 @@ public class Main {
     //Question 13
     public static String printGivenStringTimesNumberGiven(String str, int n) {
         StringBuilder resultout = new StringBuilder();
-        return null;
+        for (int a = 0; a < n; a++){
+            resultout.append(str);
+        }
+        return resultout.toString();
     }
 
 
@@ -172,8 +175,14 @@ public class Main {
 
     //Question 15 - A, E, I, O, U
     public static int vowelsCounter(String str) {
-
-
+        str = str.toLowerCase();
+        int counter = 0;
+        for (int I =0; I < str.length(); I++){
+            char vowel = str.charAt(I);
+            if (vowel == 'a' || vowel == 'e' || vowel == 'u' || vowel == 'i' || vowel == '0') {
+                counter++;
+            }
+        }
         return 0;
     }
 
