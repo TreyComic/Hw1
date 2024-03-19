@@ -170,7 +170,7 @@ public class Main {
 
     //Question 14
     public static int wordsInAStringCounter(String str) {
-        return 0;
+        return o;
     }
 
     //Question 15 - A, E, I, O, U
